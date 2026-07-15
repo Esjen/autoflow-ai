@@ -1,15 +1,11 @@
 import Navbar from "@/components/landing/Navbar";
+import Hero from "@/components/landing/Hero";
 
 export default function Home() {
   return (
-    <main>
+    <main className="overflow-x-hidden">
       <Navbar />
-
-      <section className="flex h-[80vh] items-center justify-center">
-        <h1 className="text-5xl font-bold">
-          Welcome to AutoFlow AI
-        </h1>
-      </section>
+      <Hero />
     </main>
   );
 }
