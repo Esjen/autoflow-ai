@@ -1,0 +1,15 @@
+import AuthCard from "@/components/auth/AuthCard";
+import SignupForm from "@/components/auth/SignupForm";
+
+export default function SignupPage() {
+  return (
+    <main className="flex min-h-screen items-center justify-center bg-gradient-to-br from-white via-muted/30 to-muted/60 px-6">
+      <AuthCard
+        title="Create Account"
+        description="Start automating your business with AutoFlow AI."
+      >
+        <SignupForm />
+      </AuthCard>
+    </main>
+  );
+}
