@@ -5,7 +5,7 @@ import { features } from "@/lib/data/features";
 
 export default function Features() {
   return (
-    <Section>
+    <Section id="features">
       <Container>
         <div className="mx-auto max-w-3xl text-center">
           <p className="text-sm font-medium uppercase tracking-widest text-muted-foreground">

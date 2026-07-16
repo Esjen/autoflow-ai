@@ -1,13 +1,14 @@
 import Container from "@/components/shared/Container";
 import Section from "@/components/shared/Section";
 import WorkflowStep from "./WorkflowStep";
-
+import FadeIn from "@/components/animations/FadeIn";
 import { workflowSteps } from "@/lib/data/workflow";
 
 export default function Workflow() {
   return (
-    <Section>
-      <Container>
+    <Section id="workflow">
+      <FadeIn>
+        <Container>
         <div className="text-center">
           <p className="text-sm font-medium uppercase tracking-widest text-muted-foreground">
             HOW IT WORKS
@@ -33,7 +34,8 @@ export default function Workflow() {
             />
           ))}
         </div>
-      </Container>
+        </Container>
+      </FadeIn>
     </Section>
   );
 }

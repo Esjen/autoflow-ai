@@ -6,12 +6,16 @@ import Features from "@/components/landing/Features";
 import Testimonials from "@/components/landing/Testimonials";
 import CTA from "@/components/landing/CTA";
 import Footer from "@/components/landing/Footer";
+import FadeIn from "@/components/animations/FadeIn";
 
 export default function Home() {
   return (
-    <main className="overflow-x-hidden">
+    <main className="overflow-x-hidden pt-24">
       <Navbar />
-      <Hero />
+      <FadeIn>
+        <Hero />
+      </FadeIn>
+      
       <SocialProof />
       <Workflow />
       <Features />

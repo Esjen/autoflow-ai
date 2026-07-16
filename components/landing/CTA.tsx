@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 
 export default function CTA() {
   return (
-    <Section>
+    <Section id="cta">
       <Container>
         <div className="rounded-3xl border bg-card px-8 py-20 text-center shadow-sm">
           <p className="text-sm font-medium uppercase tracking-widest text-muted-foreground">

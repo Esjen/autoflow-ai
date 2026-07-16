@@ -5,7 +5,7 @@ import { testimonials } from "@/lib/data/testimonials";
 
 export default function Testimonials() {
   return (
-    <Section>
+    <Section id="testimonials">
       <Container>
         <div className="mx-auto max-w-3xl text-center">
           <p className="text-sm font-medium uppercase tracking-widest text-muted-foreground">

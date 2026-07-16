@@ -2,7 +2,7 @@ import Container from "@/components/shared/Container";
 
 export default function Footer() {
   return (
-    <footer className="border-t">
+    <footer id="contact" className="border-t">
       <Container>
         <div className="grid gap-12 py-16 md:grid-cols-4">
 
