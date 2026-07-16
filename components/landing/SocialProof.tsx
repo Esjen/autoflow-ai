@@ -2,6 +2,8 @@ import Container from "@/components/shared/Container";
 import Section from "@/components/shared/Section";
 import StatCard from "./StatCard";
 
+import { stats } from "@/lib/data/stats";
+
 export default function SocialProof() {
   return (
     <Section>
@@ -17,25 +19,13 @@ export default function SocialProof() {
         </div>
 
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          <StatCard
-            value="500+"
-            label="Leads Managed"
-          />
-
-          <StatCard
-            value="95%"
-            label="AI Qualification Accuracy"
-          />
-
-          <StatCard
-            value="24/7"
-            label="Automation"
-          />
-
-          <StatCard
-            value="10x"
-            label="Faster Follow-ups"
-          />
+          {stats.map((stat) => (
+            <StatCard
+              key={stat.label}
+              value={stat.value}
+              label={stat.label}
+            />
+          ))}
         </div>
       </Container>
     </Section>

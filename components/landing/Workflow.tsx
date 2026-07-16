@@ -2,6 +2,8 @@ import Container from "@/components/shared/Container";
 import Section from "@/components/shared/Section";
 import WorkflowStep from "./WorkflowStep";
 
+import { workflowSteps } from "@/lib/data/workflow";
+
 export default function Workflow() {
   return (
     <Section>
@@ -22,29 +24,14 @@ export default function Workflow() {
         </div>
 
         <div className="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
-          <WorkflowStep
-            number="1"
-            title="Capture"
-            description="Customer enquiries arrive from your website, WhatsApp or email."
-          />
-
-          <WorkflowStep
-            number="2"
-            title="AI Qualifies"
-            description="AI analyses the enquiry and scores the lead instantly."
-          />
-
-          <WorkflowStep
-            number="3"
-            title="Automate"
-            description="Emails, CRM updates and follow-ups happen automatically."
-          />
-
-          <WorkflowStep
-            number="4"
-            title="Close"
-            description="Your sales team receives qualified leads ready for action."
-          />
+          {workflowSteps.map((step) => (
+            <WorkflowStep
+              key={step.number}
+              number={step.number}
+              title={step.title}
+              description={step.description}
+            />
+          ))}
         </div>
       </Container>
     </Section>
